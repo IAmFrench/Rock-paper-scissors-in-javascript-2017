@@ -93,7 +93,7 @@ class rps {
             case 'playA':
                 var txt = 'You win'
                 break
-            case 'PlayB':
+            case 'playB':
                 var txt = 'You lose'
                 break
         }
