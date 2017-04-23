@@ -10,7 +10,6 @@ li {
 
 #border {
     border: solid 2px black;
-    height: 40vh;
 }
 
 .butt {
@@ -24,5 +23,11 @@ li {
 
 hr {
     width: 90%;
-    color: black;
+    border: solid 1px black;
+    margin: 50px;
+}
+
+img {
+    height: auto;
+    width: 90%;
 }
