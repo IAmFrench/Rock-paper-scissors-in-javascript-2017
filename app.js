@@ -2,8 +2,11 @@ class rps {
     constructor(playA, playB) {
         this._playA = playA // on indique le choix du joueur A
         this._playB = playB || null // on indique le choix du joueur B
+
         this._result = this.winner // on calcule le winner directement depuis la methode get
-        switch (this_result) {
+        this.addPictures() // on ajoute les images
+
+        switch (this._result) {
             case 'none': // pas de vainqueurs
                 break;
             case 'playA':
@@ -61,6 +64,25 @@ class rps {
         this._playB = moves[id]
         return this.playB
     }
+
+    addPictures() {
+        var imageA
+        var imageB
+
+        var images = {
+            "rock":"https://upload.wikimedia.org/wikipedia/commons/7/7e/Rock-paper-scissors_%28rock%29.png",
+            "paper":"https://upload.wikimedia.org/wikipedia/commons/a/af/Rock-paper-scissors_%28paper%29.png",
+            "scissors":"https://upload.wikimedia.org/wikipedia/commons/5/5f/Rock-paper-scissors_%28scissors%29.png"
+        }
+
+        imageA = `<img src="${images[this._playA]}" alt="${this._playA}">`
+        imageB = `<img src="${images[this._playB]}" alt="${this._playB}">`
+
+        var parA = document.querySelector('.you').innerHTML = imageA
+        var parB = document.querySelector('.ia').innerHTML = imageB
+
+        return 'Images added'
+    }
 }
 
 
@@ -81,4 +103,3 @@ document.querySelector('#scissors').addEventListener('click', function (e){
     playA = e.target.value
     game = new rps(playA)
 })
-
