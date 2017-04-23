@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    display: inline-block;
+}
