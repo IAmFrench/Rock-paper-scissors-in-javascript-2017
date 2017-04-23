@@ -39,3 +39,6 @@ img {
 .result {
     font-size: 50px;
 }
+.hide {
+    display: none;
+}
