@@ -5,6 +5,7 @@ class rps {
 
         this._result = this.winner // on calcule le winner directement depuis la methode get
         this.addPictures() // on ajoute les images
+        this.addResult() // on joute le résultat
 
         switch (this._result) {
             case 'none': // pas de vainqueurs
@@ -78,10 +79,25 @@ class rps {
         imageA = `<img src="${images[this._playA]}" alt="${this._playA}">`
         imageB = `<img src="${images[this._playB]}" alt="${this._playB}">`
 
-        var parA = document.querySelector('.you').innerHTML = imageA
-        var parB = document.querySelector('.ia').innerHTML = imageB
+        document.querySelector('.you').innerHTML = imageA
+        document.querySelector('.ia').innerHTML = imageB
 
         return 'Images added'
+    }
+
+    addResult() {
+        switch (this._result) {
+            case 'none':
+                var txt = 'Draw'
+                break
+            case 'playA':
+                var txt = 'You win'
+                break
+            case 'PlayB':
+                var txt = 'You lose'
+                break
+        }
+        document.querySelector('#result').innerHTML = txt
     }
 }
 
