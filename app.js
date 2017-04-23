@@ -98,6 +98,7 @@ class rps {
                 break
         }
         document.querySelector('#result').innerHTML = txt
+        alert(txt)
     }
 }
 
