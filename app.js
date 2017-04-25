@@ -22,34 +22,23 @@ class rps {
         if (this.playA == null) { // on générer aléatoirement un move pour le playerB
             this.setPlayB()
         }
-        console.log(this._playA)
-        console.log(this._playB)
         
-        switch (this._playA) {
-            case this._playB: // ils sont identiques
+        console.log('Joueur A: ', this._playA)
+        console.log('Joueur A: ', this._playB)
+
+        switch (this._playA + '-' + this._playB) {
+            case 'paper-rock':
+            case 'scissors-paper':
+            case 'rock-scissors':
+                this._winner = 'playA'
+                break;
+            case 'rock-paper':
+            case 'paper-scissors':
+            case 'scissors-rock':
+                this._winner = 'playB'
+            default:
                 this._winner = 'none'
-                break
-            case 'rock':
-                if (this._playB == 'scissors') {
-                    this._winner = 'playA'
-                } else {
-                    this._winner = 'playB'
-                }
-                break
-            case 'paper':
-                if (this._playB == 'rock') {
-                    this._winner = 'playA'
-                } else {
-                    this._winner = 'playB'
-                }
-                break
-            case 'scissors':
-                if (this._playB == 'paper') {
-                    this._winner = 'playA'
-                } else {
-                    this._winner = 'playB'
-                }
-                break
+                break;
         }
         return this._winner
     }
