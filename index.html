@@ -6,55 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock–paper–scissors in Javascript</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <h1 class="col-md-12">Rock–paper–scissors</h1>
-    <div class=col-md-12>
-        <div class="col-md-6" id="border">
-            <h2>
-                You!
-            </h2>
-            <hr>
-            <div class="you"></div>
-        </div>
-        <div class="col-md-6" id="border">
-            <h2>
-                IA!
-            </h2>
-            <hr>
-            <div class="ia"></div>
+
+<div class="container-fluid">
+    <!-- Titre -->
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Rock–paper–scissors</h1>
         </div>
     </div>
-    <ul>
-        <li>
-            <input type="button" class="butt" id="rock" value="rock">
-        </li>
-        <li>
-            <input type="button" class="butt" id="paper" value="paper">
-        </li>
-        <li>
-            <input type="button" class="butt" id="scissors" value="scissors">
-        </li>
-    </ul>
-    <div class="result">
-        <span id="result"></span>
+    <!-- Fin Titre -->
+
+
+    <!-- Images -->
+    <div class="row">
+        <div class="col-md-12  text-center">
+            <div class="col-md-5 col-xs-5 col-md-offset-1 col-xs-offset-1">
+                <h2>You!</h2>
+                <hr>
+                <div class="you"></div>
+            </div>
+            <div class="col-md-5 col-xs-5 ">
+                <h2>IA!</h2>
+                <hr>
+                <div class="ia"></div>
+            </div>
+        </div>
     </div>
+    <!-- Fin Images -->
+
+
+    <!-- Separation -->
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <hr>
+        </div>
+    </div>
+    <!-- Fin Separation -->
+    
+    
+    <!-- Boutons -->
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="list-inline text-center">
+                <li>
+                    <input type="button" class="butt btn btn-success" id="rock" value="rock">
+                </li>
+                <li>
+                    <input type="button" class="butt btn btn-success" id="paper" value="paper">
+                </li>
+                <li>
+                    <input type="button" class="butt btn btn-success" id="scissors" value="scissors">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Fin Boutons -->
+
+
+    <!-- Résulat -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="result text-center">
+                <h2 id="result"></h2>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Résulat -->
+</div>
+
+    
+    
+
+
+
+    
+
+
+    
     
     <div class="hide">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Rock-paper-scissors_%28rock%29.png" alt="rock">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Rock-paper-scissors_%28paper%29.png" alt="paper">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Rock-paper-scissors_%28scissors%29.png" alt="scissors">
     </div>
+    
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 

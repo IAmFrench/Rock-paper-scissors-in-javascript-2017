@@ -1,44 +1,11 @@
-body {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-li {
-    display: inline-block;
-    padding-top: 50px;
-}
-
-#border {
-    border: solid 2px black;
-}
-
-.butt {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-}
-
-hr {
-    width: 90%;
-    border: solid 1px black;
-}
-
 img {
-    height: auto;
-    width: 50%;
-    margin-bottom: 15px;
+    width: 100%;
 }
 
-.ia {
+.ia > img {
     transform: scaleX(-1);
 }
-
-.result {
-    font-size: 50px;
-}
-.hide {
-    display: none;
+#result {
+    font-size: 25px;
+    font-weight: bold;
 }
