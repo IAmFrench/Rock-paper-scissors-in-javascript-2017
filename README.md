@@ -31,4 +31,6 @@ Ouvrir simplement le fichier `index.html`
 1. Installer les dépendances: `npm install`
 2. Lancer le mini-serveur web: `npm start`
 
+# Demo
 
+[![Exemple de partie en gif](https://i.imgur.com/CBCvKF9.gif)](https://i.imgur.com/CBCvKF9.gifv))
