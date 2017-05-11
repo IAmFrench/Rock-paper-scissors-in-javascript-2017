@@ -10,3 +10,7 @@ img {
     font-size: 25px;
     font-weight: bold;
 }
+input {
+    width: 100px;
+    text-transform: uppercase;
+}
