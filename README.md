@@ -33,4 +33,4 @@ Ouvrir simplement le fichier `index.html`
 
 # Demo
 
-[![Exemple de partie en gif](https://i.imgur.com/CBCvKF9.gif)](https://i.imgur.com/CBCvKF9.gifv))
+[![Exemple de partie en gif](https://i.imgur.com/CBCvKF9.gif)](https://i.imgur.com/CBCvKF9.gifv)
